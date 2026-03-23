@@ -1,0 +1,15 @@
+node_modules/
+
+# obsidian
+data.json
+
+# Editor
+.idea/
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Build
+*.js.map

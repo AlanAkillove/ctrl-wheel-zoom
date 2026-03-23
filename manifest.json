@@ -1,0 +1,10 @@
+{
+  "id": "ctrl-wheel-zoom",
+  "name": "Ctrl Wheel Zoom",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "支持Ctrl+滚轮缩放Obsidian笔记内容",
+  "author": "Akillove",
+  "authorUrl": "",
+  "isDesktopOnly": true
+}
