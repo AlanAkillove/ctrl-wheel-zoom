@@ -1,130 +1,166 @@
+<div align="center">
+
 # Ctrl Wheel Zoom
 
-一个强大的 Obsidian 缩放插件，支持 Ctrl+滚轮缩放笔记内容，提供丰富的自定义选项。
+**A powerful zoom plugin for Obsidian**
 
-## ✨ 功能特性
+*Zoom your notes with Ctrl + Mouse Wheel*
 
-### 🔧 核心功能
-- **Ctrl+滚轮缩放** - 使用 Ctrl 键配合鼠标滚轮快速缩放笔记内容
-- **缩放锁定** - 锁定固定缩放比例，防止误操作
-- **分视图独立缩放** - 每个分栏可独立设置不同的缩放比例
-- **自动缩放规则** - 根据文件类型、标签或文件夹自动应用缩放
+[![Obsidian Downloads](https://img.shields.io/badge/dynamic/json?logo=obsidian&color=%23483699&label=downloads&query=%24%5B%22ctrl-wheel-zoom%22%5D.downloads&url=https%3A%2F%2Fraw.githubusercontent.com%2Fobsidianmd%2Fobsidian-releases%2Fmaster%2Fcommunity-plugin-stats.json)](https://obsidian.md/plugins?id=ctrl-wheel-zoom)
+[![GitHub release](https://img.shields.io/github/release/AlanAkillove/ctrl-wheel-zoom.svg)](https://github.com/AlanAkillove/ctrl-wheel-zoom/releases)
+[![License](https://img.shields.io/github/license/AlanAkillove/ctrl-wheel-zoom.svg)](LICENSE)
 
-### 🎨 显示选项
-- **状态栏显示** - 在底部状态栏实时显示当前缩放百分比
-- **缩放动画** - 平滑的缩放过渡动画效果
-- **通知提示** - 缩放时显示当前比例通知
-- **记住缩放** - 重启 Obsidian 后保持上次的缩放比例
+[English](#features) | [简体中文](README_zh.md)
 
-### ⚡ 高级功能
-- **双击重置** - 双击编辑区域快速重置为 100%
-- **预设缩放级别** - 自定义预设比例，快速切换
-- **缩放历史** - 撤销/重做缩放操作
-- **字体大小调整** - 可选择调整字体大小而非整体缩放
-- **多语言支持** - 支持中文和英文界面
+</div>
 
-## 📦 安装
+---
 
-### 手动安装
-1. 下载 `main.js` 和 `manifest.json` 文件
-2. 在 Obsidian 库中创建文件夹：`你的库/.obsidian/plugins/ctrl-wheel-zoom/`
-3. 将下载的文件放入该文件夹
-4. 重启 Obsidian
-5. 在设置 > 第三方插件中启用 "Ctrl Wheel Zoom"
+## ✨ Features
 
-### BRAT 安装（推荐）
-1. 安装 [BRAT](https://github.com/TfTHacker/obsidian42-brat) 插件
-2. 在 BRAT 设置中添加此仓库地址
-3. 启用插件
+### 🎯 Core
+- **Ctrl + Wheel Zoom** - Smoothly zoom in/out with Ctrl key + mouse wheel
+- **Zoom Lock** - Lock to a fixed zoom level to prevent accidental changes
+- **Independent Split View Zoom** - Each split pane remembers its own zoom level
+- **Auto Zoom Rules** - Automatically apply zoom based on file type, folder, or tags
 
-## 🎮 使用方法
+### 🎨 Display
+- **Status Bar** - Real-time zoom percentage display
+- **Smooth Animations** - Elegant transition effects
+- **Notifications** - Visual feedback on zoom changes
+- **Persistent Zoom** - Remember your zoom level across sessions
 
-### 基本操作
-| 操作 | 功能 |
-|------|------|
-| `Ctrl + 滚轮` | 缩放笔记内容 |
-| `Ctrl + 0` | 重置为 100% |
-| `Ctrl + =` | 放大 |
-| `Ctrl + -` | 缩小 |
-| 双击编辑区域 | 重置缩放 |
+### ⚡ Advanced
+- **Double-click Reset** - Quickly reset to 100%
+- **Preset Zoom Levels** - Quick access to predefined zoom values
+- **Zoom History** - Undo/redo zoom operations
+- **Font Size Mode** - Adjust font size instead of page zoom
+- **Multi-language** - English & Chinese support
 
-### 状态栏交互
-- **左键点击** - 显示快速缩放菜单
-- **右键点击** - 显示锁定选项和预设缩放
+---
 
-## ⚙️ 设置说明
+## 📦 Installation
 
-### 基础设置
-| 设置项 | 说明 |
-|--------|------|
-| 语言 | 中文 / English |
-| 锁定缩放比例 | 开启后 Ctrl+滚轮不再调节缩放 |
-| 锁定的缩放比例 | 设置固定缩放值 |
-| 缩放步长 | 每次滚轮调整的缩放幅度 |
-| 最小/最大缩放 | 自定义缩放范围 |
-| 预设缩放级别 | 自定义预设比例 |
+### Option 1: Manual Installation
+1. Download `main.js` and `manifest.json` from [Releases](https://github.com/AlanAkillove/ctrl-wheel-zoom/releases)
+2. Create folder: `your-vault/.obsidian/plugins/ctrl-wheel-zoom/`
+3. Move downloaded files into the folder
+4. Restart Obsidian → Settings → Community plugins → Enable "Ctrl Wheel Zoom"
 
-### 显示设置
-| 设置项 | 说明 |
-|--------|------|
-| 显示通知 | 缩放时显示通知 |
-| 显示状态栏 | 底部显示当前缩放百分比 |
-| 记住缩放比例 | 重启后保持缩放 |
-| 启用动画 | 平滑过渡动画 |
-| 动画时长 | 动画持续时间 |
+### Option 2: BRAT (Recommended for Beta)
+1. Install [BRAT](https://github.com/TfTHacker/obsidian42-brat)
+2. Add repository: `AlanAkillove/ctrl-wheel-zoom`
+3. Enable the plugin
 
-### 高级设置
-| 设置项 | 说明 |
-|--------|------|
-| 使用字体大小调整 | 调整字体而非整体缩放 |
-| 基础字体大小 | 100% 时的字体大小 |
-| 双击重置 | 双击编辑区域重置缩放 |
-| 分视图独立缩放 | 每个分栏独立记忆缩放 |
-| 自动缩放规则 | 根据条件自动应用缩放 |
+---
 
-## ⌨️ 快捷键
+## 🎮 Usage
 
-| 命令 | 默认快捷键 |
-|------|-----------|
-| 重置缩放 | `Ctrl + 0` |
-| 放大 | `Ctrl + =` |
-| 缩小 | `Ctrl + -` |
-| 撤销缩放 | `Ctrl + Shift + Z` |
-| 重做缩放 | `Ctrl + Shift + Y` |
-| 切换缩放锁定 | 可自定义 |
-| 循环预设缩放 | 可自定义 |
+### Basic Controls
+| Action | Result |
+|--------|--------|
+| `Ctrl + Wheel` | Zoom in/out |
+| `Ctrl + 0` | Reset to 100% |
+| `Ctrl + =` | Zoom in |
+| `Ctrl + -` | Zoom out |
+| Double-click editor | Reset zoom |
 
-## 🔄 自动缩放规则
+### Status Bar
+- **Left click** - Quick zoom menu
+- **Right click** - Lock options & presets
 
-支持三种规则类型：
+---
 
-1. **文件类型** - 根据文件扩展名自动缩放
-   - 例如：`.canvas` 文件自动缩放到 80%
-   
-2. **文件夹** - 根据文件所在文件夹自动缩放
-   - 例如：`Templates/` 文件夹下的文件自动缩放到 90%
-   
-3. **标签** - 根据 frontmatter 中的标签自动缩放
-   - 例如：带有 `tags: [presentation]` 的文件自动缩放到 150%
+## ⚙️ Configuration
 
-## 📝 版本历史
+### General
+| Setting | Description |
+|---------|-------------|
+| Language | English / 中文 |
+| Lock Zoom | Prevent Ctrl+wheel from changing zoom |
+| Locked Zoom Level | Fixed zoom value when locked |
+| Zoom Step | Increment per wheel scroll |
+| Min/Max Zoom | Zoom range limits |
+| Presets | Customizable preset zoom levels |
 
-### v1.0.0
-- 初始版本发布
-- 支持 Ctrl+滚轮缩放
-- 缩放锁定功能
-- 分视图独立缩放
-- 自动缩放规则
-- 多语言支持
+### Display
+| Setting | Description |
+|---------|-------------|
+| Show Notifications | Display zoom level on change |
+| Show Status Bar | Display current zoom percentage |
+| Remember Zoom | Persist zoom across sessions |
+| Enable Animation | Smooth zoom transitions |
+| Animation Duration | Transition speed (ms) |
 
-## 📄 许可证
+### Advanced
+| Setting | Description |
+|---------|-------------|
+| Font Size Mode | Adjust font size instead of zoom |
+| Base Font Size | Font size at 100% zoom |
+| Double-click Reset | Reset zoom on double-click |
+| Independent Zoom | Each split view has own zoom |
+| Auto Zoom Rules | Apply zoom automatically |
 
-MIT License
+---
 
-## 🤝 贡献
+## ⌨️ Keyboard Shortcuts
 
-欢迎提交 Issue 和 Pull Request！
+| Command | Default |
+|---------|---------|
+| Reset Zoom | `Ctrl + 0` |
+| Zoom In | `Ctrl + =` |
+| Zoom Out | `Ctrl + -` |
+| Undo Zoom | `Ctrl + Shift + Z` |
+| Redo Zoom | `Ctrl + Shift + Y` |
+| Toggle Lock | Customizable |
+| Cycle Presets | Customizable |
 
-## ☕ 支持
+---
 
-如果这个插件对你有帮助，欢迎 Star ⭐ 支持一下！
+## 🔄 Auto Zoom Rules
+
+Configure automatic zoom based on file properties:
+
+### File Type
+```
+Type: fileType | Pattern: canvas | Zoom: 0.8
+```
+Canvas files automatically zoom to 80%
+
+### Folder
+```
+Type: folder | Pattern: Templates/ | Zoom: 0.9
+```
+Files in Templates folder zoom to 90%
+
+### Tag
+```
+Type: tag | Pattern: presentation | Zoom: 1.5
+```
+Files with `tags: [presentation]` zoom to 150%
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+- 🐛 [Report bugs](https://github.com/AlanAkillove/ctrl-wheel-zoom/issues)
+- 💡 [Request features](https://github.com/AlanAkillove/ctrl-wheel-zoom/issues)
+- 🔧 Submit pull requests
+
+---
+
+## 📄 License
+
+[MIT License](LICENSE) © AlanAkillove
+
+---
+
+<div align="center">
+
+**If this plugin helps you, consider giving it a ⭐ star!**
+
+[![GitHub stars](https://img.shields.io/github/stars/AlanAkillove/ctrl-wheel-zoom?style=social)](https://github.com/AlanAkillove/ctrl-wheel-zoom/stargazers)
+
+</div>

@@ -3,7 +3,7 @@
 var obsidian = require('obsidian');
 
 const DEFAULT_SETTINGS = {
-  language: 'zh',
+  language: 'en',
   zoomLocked: false,
   lockedZoomLevel: 1.0,
   step: 0.1,
