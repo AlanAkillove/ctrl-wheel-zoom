@@ -3,7 +3,7 @@
   "name": "Ctrl Wheel Zoom",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
-  "description": "支持Ctrl+滚轮缩放Obsidian笔记内容",
+  "description": "A plugin that supports Ctrl + scroll wheel to zoom in/out the content of Obsidian notes",
   "author": "Akillove",
   "authorUrl": "",
   "isDesktopOnly": true
